@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/secondFragment">
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.onepieceproject.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_dfLayout2"
+            app:destination="@id/dfLayout2" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.onepieceproject.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_detallesPersonajes2"
+            app:destination="@id/detallesPersonajes2" />
+    </fragment>
+    <fragment
+        android:id="@+id/dfLayout2"
+        android:name="com.example.onepieceproject.dfLayout"
+        android:label="fragment_df_layout"
+        tools:layout="@layout/fragment_df_layout" />
+
+    <fragment
+        android:id="@+id/detallesPersonajes2"
+        android:name="com.example.onepieceproject.DetallesPersonajes"
+        android:label="fragment_detalles_personajes"
+        tools:layout="@layout/fragment_detalles_personajes" />
+</navigation>
